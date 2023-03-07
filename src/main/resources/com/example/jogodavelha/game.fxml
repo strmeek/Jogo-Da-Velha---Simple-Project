@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="vboxGame" alignment="TOP_CENTER" prefHeight="800.0" prefWidth="800.0" spacing="40.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.jogodavelha.GameController">
+   <children>
+      <HBox alignment="CENTER" spacing="520.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="105.0" prefWidth="105.0" spacing="520.0">
+               <children>
+                  <Button fx:id="buttonDarkMode" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="bt-darkmode" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fx:id="imgViewDarkMode" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/lightmode.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="105.0" prefWidth="105.0">
+               <children>
+                  <Button fx:id="buttonClose" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" styleClass="bt-darkmode" stylesheets="@style.css">
+                     <graphic>
+                        <ImageView fx:id="imgViewClose" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons/Xicon.png" />
+                           </image>
+                           <effect>
+                              <ColorAdjust />
+                           </effect>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <GridPane fx:id="gridGame" alignment="CENTER" hgap="2.0" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" styleClass="grid-lines" stylesheets="@style.css" vgap="2.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <Button id="bt-0-0" fx:id="button_0_0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css">
+               <graphic>
+                  <ImageView fx:id="img_0_0" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-1-0" fx:id="button_1_0" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fx:id="img_1_0" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-2-0" fx:id="button_2_0" layoutX="147.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fx:id="img_2_0" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-0-1" fx:id="button_0_1" layoutX="284.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="img_0_1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-1-1" fx:id="button_1_1" layoutX="10.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="img_1_1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-2-1" fx:id="button_2_1" layoutX="147.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <graphic>
+                  <ImageView fx:id="img_2_1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-0-2" fx:id="button_0_2" layoutX="284.0" layoutY="148.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fx:id="img_0_2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-1-2" fx:id="button_1_2" layoutX="10.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fx:id="img_1_2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button id="bt-2-2" fx:id="button_2_2" layoutX="147.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="132.0" prefWidth="132.0" styleClass="bt-jogo-da-velha" stylesheets="@style.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <graphic>
+                  <ImageView fx:id="img_2_2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+      <Label id="turn-label" fx:id="LabelTurn" alignment="CENTER" contentDisplay="RIGHT" prefHeight="60.0" prefWidth="913.0" stylesheets="@style.css" text="Turn" textAlignment="CENTER">
+         <graphic>
+            <ImageView fx:id="imgViewTurn" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons/Xicon.png" />
+               </image>
+               <effect>
+                  <ColorAdjust />
+               </effect>
+            </ImageView>
+         </graphic>
+      </Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

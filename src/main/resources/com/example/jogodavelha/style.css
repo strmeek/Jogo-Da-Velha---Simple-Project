@@ -1,0 +1,122 @@
+/* IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*'Bebas Neue'*/
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&display=swap');/*'Arsenal'*/
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');/*'Cutive Mono'*/
+/*'Montserrat'*/@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*'Montserrat Alternates'*/@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');/*'Questrial'*/
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');/*'Sen'*/
+
+*{
+    /* COLOR PALLETE */
+    /*Blue Pallete*/
+    -PURPLEISH-BLUE: #131862; /*Federal Blue*/
+    -DARK-BLUE: #041A40; /*Oxford Blue*/
+    -MEDIUM-BLUE: #0A3361; /*Berkeley Blue*/
+    -LIGHT-BLUE: #7EA0B7; /*Air superiority blue*/
+    -LIGHTER-BLUE: #87CEEB; /*Sky Blue*/
+
+    /*Whites*/
+    -WHITE: #FFFAFB; /*Snow White*/
+    -MATTE-WHITE: #F4F4F9; /*Ghost White*/
+
+    /*Blacks and Grays*/
+    -BLACK: #121113; /*Night*/
+    -DARK-GRAY: #3F3F3F; /*Onyx*/
+    -GRAY: #575757; /*Davys Gray*/
+    -CADET-GRAY: #8499B1; /*CADET GRAY*/
+    -LIGHT-GRAY: #C9C9C9; /*Silver*/
+    -LIGHTER-GRAY: #EAEAEA; /*Platinum*/
+
+    /*Hot Colors or Highlight Colors*/
+    -RED: #880907; /*RED*/
+    -DARK-RED: #6B0504; /*BLOOD RED*/
+    -ORANGE: #EE7B30; /*PUMPKIN*/
+    -YELLOW: #D7B633; /*OLD GOLD*/
+    -GREEN: #439523; /*FORREST GREEN*/
+    -CYAN: #09ECE5; /*FLUORESCENT CYAN*/
+    -MAGENTA: #8F008F; /*DARK MAGENTA*/
+
+    /*COLOR VARIABLES*/
+    /*LABELS*/
+    -LIGHT-LABEL: -WHITE;
+    -DARK-LABEL: -BLACK;
+    -SECONDARY-LABEL: -LIGHT-GRAY;
+
+    /*BACKGROUND*/
+    -DARK-BACKGROUND: -DARK-GRAY;
+    -LIGHT-BACKGROUND: -MATTE-WHITE;
+
+    /*MODES*/
+    -HOVER-DARKMODE: -WHITE;
+    -HOVER-LIGHTMODE: -BLACK;
+    -GRID-LINES: -BLACK;
+    }
+
+/*UTILITY CLASSES*/
+
+.transparent{
+    -fx-background-color: rgba(0 ,0 ,0 ,0);
+}
+
+/*BUTTONS*/
+.bt-jogo-da-velha{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-border-color: -GRID-LINES;
+}
+
+.bt-jogo-da-velha:hover{
+    -fx-background-color: -LIGHT-GRAY;
+}
+
+.bt-darkmode{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.bt-darkmode:hover{
+    -fx-border-width: 3px;
+    -fx-border-color: -HOVER-LIGHTMODE;
+}
+/*Label*/
+#turn-label {
+    -fx-font: normal bolder 2em 'Montserrat';
+    -fx-text-fill: -DARK-LABEL;
+}
+
+/*GRID LINES*/
+
+#bt-0-0{
+    -fx-border-width: 0px 5px 5px 0px;
+}
+
+#bt-1-0{
+    -fx-border-width: 0px 5px 5px 5px;
+}
+
+#bt-2-0{
+    -fx-border-width: 0px 0px 5px 5px;
+}
+
+#bt-0-1{
+    -fx-border-width: 5px 5px 5px 0px;
+}
+
+#bt-1-1{
+    -fx-border-width: 5px;
+}
+
+#bt-2-1{
+    -fx-border-width: 5px 0px 5px 5px;
+}
+
+#bt-0-2{
+    -fx-border-width: 5px 5px 0px 0px;
+}
+
+#bt-1-2{
+    -fx-border-width: 5px 5px 0px 5px;
+}
+
+#bt-2-2{
+    -fx-border-width: 5px 0px 0px 5px;
+}
